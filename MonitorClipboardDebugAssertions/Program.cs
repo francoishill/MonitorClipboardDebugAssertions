@@ -15,10 +15,11 @@ namespace MonitorClipboardDebugAssertions
 		[STAThread]
 		static void Main()
 		{
-			SharedClasses.AutoUpdating.CheckForUpdates_ExceptionHandler();
-
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
+
+			SharedClasses.AutoUpdating.CheckForUpdates_ExceptionHandler();
+
 			Application.Run(new MainForm());
 		}
 	}
